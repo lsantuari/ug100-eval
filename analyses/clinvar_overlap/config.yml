@@ -1,0 +1,11 @@
+default:
+  vcf_file: "clinvar_20250623.vcf.gz"
+  bed_files:
+    - "ga4gh-regions/GRCh38/LowComplexity/GRCh38_SimpleRepeat_homopolymer_4to6_slop5.bed.gz"
+    - "ga4gh-regions/GRCh38/LowComplexity/GRCh38_SimpleRepeat_homopolymer_7to11_slop5.bed.gz"
+    - "ga4gh-regions/GRCh38/LowComplexity/GRCh38_SimpleRepeat_homopolymer_gt11_slop5.bed.gz"
+    - "ga4gh-regions/GRCh38/LowComplexity/GRCh38_SimpleRepeat_homopolymer_gt20_slop5.bed.gz"
+  output_folder: "./results_clinvar_overlap"
+  log_file: "overlap_analysis.log"
+  ignore_strand: true
+  parallel: true

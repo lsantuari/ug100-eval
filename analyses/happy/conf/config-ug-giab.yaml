@@ -1,0 +1,58 @@
+reference: reference-genomes/GRCh38/genome/GRCh38.p14.fna
+sdf: reference-genomes/GRCh38/genome/GRCh38.p14.sdf
+stratifications: GIAB/ga4gh-regions/v3.6/GRCh38@all/GRCh38-all-stratifications.tsv
+threads: 6
+output_dir: results_happy_ug_giab
+
+# Per-sample configs
+samples:
+  414004-L7384-Z0008-CACATCCTGCATGTGAT:
+    truth_vcf: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7384-Z0008-CACATCCTGCATGTGAT.annotated.filt.vcf.gz
+  
+  414004-L7385-Z0113-CAGTTCATCTGTGAT:
+    truth_vcf: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7385-Z0113-CAGTTCATCTGTGAT.annotated.filt.vcf.gz
+
+  414004-L7386-Z0114-CAACATACATCAGAT:
+    truth_vcf: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7386-Z0114-CAACATACATCAGAT.annotated.filt.vcf.gz
+
+  414004-L7387-Z0115-CGGCTAGATGCAGAT:
+    truth_vcf: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7387-Z0115-CGGCTAGATGCAGAT.annotated.filt.vcf.gz
+
+  414004-L7388-Z0016-CATCCTGTGCGCATGAT:
+    truth_vcf: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7388-Z0016-CATCCTGTGCGCATGAT.annotated.filt.vcf.gz
+
+  414004-L7389-Z0024-CTGAGCCTGTCAGAT:
+    truth_vcf: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7389-Z0024-CTGAGCCTGTCAGAT.annotated.filt.vcf.gz
+
+  414004-L7390-Z0117-CTGCCGAGCAGCATGAT:
+    truth_vcf: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7390-Z0117-CTGCCGAGCAGCATGAT.annotated.filt.vcf.gz
+
+  414004-L7391-Z0118-CTGCCTCAGATCATGAT:
+    truth_vcf: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7391-Z0118-CTGCCTCAGATCATGAT.annotated.filt.vcf.gz
+
+  414004-L7392-Z0032-CTCTGTATTGCAGAT:
+    truth_vcf: GIAB/HG005/HG005_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG005/HG005_GRCh38_1_22_v4.2.1_benchmark.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7392-Z0032-CTCTGTATTGCAGAT.annotated.filt.vcf.gz
+
+  414004-L7393-Z0119-CTGATCAGTGGCGAT:
+    truth_vcf: GIAB/HG005/HG005_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG005/HG005_GRCh38_1_22_v4.2.1_benchmark.bed
+    query_vcf: ultima-GIAB/DeepVariant_vcfs/414004-L7393-Z0119-CTGATCAGTGGCGAT.annotated.filt.vcf.gz
+

@@ -1,0 +1,25 @@
+# Global settings
+reference: reference-genomes/GRCh38/genome/GRCh38.p14.fna
+sdf: reference-genomes/GRCh38/genome/GRCh38.p14.sdf
+stratifications: GIAB/ga4gh-regions/v3.6/GRCh38@all/GRCh38-all-stratifications.tsv
+threads: 6
+output_dir: results_happy_ultima_30x
+
+# Per-sample configs
+samples:
+  HG001:
+    truth_vcf: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
+    query_vcf: 2024-ultimagen-data/VCF/30X/409193_409774_L5642_Z0025.annotated.AF.vcf.gz
+  HG002:
+    truth_vcf: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: 2024-ultimagen-data/VCF/30X/409193_409774_L5643_Z0027.annotated.AF.vcf.gz
+  HG003:
+    truth_vcf: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: 2024-ultimagen-data/VCF/30X/409774-CL16287-Z0008.annotated.AF.vcf.gz
+  HG004:
+    truth_vcf: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: 2024-ultimagen-data/VCF/30X/409193_409774_L5645_Z0113.annotated.AF.vcf.gz

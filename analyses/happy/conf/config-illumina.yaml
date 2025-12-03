@@ -1,0 +1,28 @@
+# Global settings
+reference: reference-genomes/GRCh38/genome/GRCh38.p14.fna
+sdf: reference-genomes/GRCh38/genome/GRCh38.p14.sdf
+stratifications: GIAB/ga4gh-regions/v3.6/GRCh38@all/GRCh38-all-stratifications.tsv
+threads: 6
+output_dir: results_happy_illumina
+
+# Per-sample configs
+samples:
+  HG001:
+    truth_vcf: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG001/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
+    query_vcf: sequencing-data/2025-dragen-4.3-validation/5bbc92b8-d3de-11ef-bd24-3ad6204d74ca/NA12878_N24_al3_NGS000001940_NA.hard-filtered.vcf.gz
+
+  HG002:
+    truth_vcf: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG002/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: 2025-dragen-4.3-validation/875768bb-e868-11ef-a66c-c28f849d2b0a/NA24385_D2_al3_NGS000001942_NA.hard-filtered.vcf.gz
+
+  HG003:
+    truth_vcf: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG003/HG003_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: 2025-dragen-4.3-validation/61e07bc8-e864-11ef-a66c-c28f849d2b0a/NA24149_D5_al3_NGS000001943_NA.hard-filtered.vcf.gz
+
+  HG004:
+    truth_vcf: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+    truth_bed: GIAB/HG004/HG004_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+    query_vcf: 2025-dragen-4.3-validation/b9287f0a-e86e-11ef-a66c-c28f849d2b0a/NA24143_D4_al3_NGS000001941_NA.hard-filtered.vcf.gz
